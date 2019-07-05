@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MUSIC</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+<body>
+    <div class="contain">
+        <div class="music" id="music">
+            <span id="title"></span>
+            <div class="pho" onclick = rotate() id="pho">
+                <img src="./one.gif" height="100%" width="100%" />
+            </div>
+            <div class="time">
+                <span class="start_time" id="start_time">00:00</span> /
+                <span class="total_time" id="total_time">00:00</span>
+            </div>
+            <div class="bar">
+                <div class="vader" style="height: 6px; width: 0;" id="barvader"></div>
+            </div>
+            <div class="control">
+                <span class="Back" onclick = backAudio()>Back</span>
+                <div class="Open" onclick = openAudio()>Open</div>
+                <span class="Next" onclick = nextAudio()>Next</span>
+            </div>
+            <div class="font" id="font"></div>
+            <!-- <div class="music_list">
+                <ul>
+                    <li>一程山路.mp3</li>
+                    <li>空心.mp3</li>
+                    <li>起风了.mp3<li>
+                    <li>有一种悲伤.mp3</li>
+                </ul>
+            </div> -->
+        </div>
+    </div>
+    <audio id="audio"></audio>
+</body>
+<script type="text/javascript" src="./main.js"></script>
+</html>
